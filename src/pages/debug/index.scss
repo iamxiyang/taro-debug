@@ -1,0 +1,145 @@
+.debug {
+  padding: 5%;
+
+  // 用户基础信息
+  .user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      overflow: hidden;
+      background-color: #f2f2f2;
+    }
+
+    &__text {
+      flex: 1;
+      margin-left: 40px;
+      height: 100%;
+    }
+
+    &__name {
+      display: block;
+      margin-top: 10px;
+    }
+
+    &__id {
+      display: block;
+      color: #888;
+      font-size: 30px;
+      margin-top: 10px;
+    }
+  }
+
+  // 提示语
+  .tips {
+    font-size: 28px;
+    text-align: justify;
+    margin-top: 40px;
+    color: #666;
+
+    &__text {
+      display: block;
+      margin-bottom: 20px;
+
+      &.bold {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .block {
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 1PX solid #ebebeb;
+
+    &-title {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      font-size: 28px;
+      margin-bottom: 30px;
+
+      .icon-question {
+        $size: 24px;
+        display: inline-block;
+        width: $size;
+        height: $size;
+        line-height: $size;
+        font-size: 80%;
+        text-align: center;
+        margin-left: 12px;
+        border-radius: 50%;
+        color: white;
+        background-color: #a6a6a6;
+      }
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      font-size: 30px;
+      color: #888;
+
+      &__title {
+        width: 50%;
+      }
+
+      &__content {
+      }
+    }
+
+    // 路由参数
+    .router-options {
+      display: block;
+      background-color: #e9e9e9;
+      padding: 10px;
+      font-size: 80%;
+      border-radius: 2px;
+      margin-bottom: 20px;
+      white-space: normal;
+      word-wrap: break-word;
+      word-break: break-all;
+    }
+
+    // 工具子项
+    .tool-item {
+      .input {
+        flex: 2;
+        width: 80%;
+        height: 80px;
+        line-height: 80px;
+        padding-left: 20px;
+        border: 1px solid #f2f2f2;
+
+
+        & + .btn {
+          flex: 1;
+        }
+      }
+
+      .btn {
+        margin: 10px;
+        border: none;
+        color: white;
+        width: 100%;
+        height: 80px;
+        line-height: 80px;
+        font-size: 30px;
+        text-align: center;
+        border-radius: 4px;
+        background-color: dodgerblue;
+
+        &:after {
+          border: none;
+        }
+      }
+    }
+  }
+
+}
